@@ -1,9 +1,14 @@
 
 var expect = require('chai').expect;
 var Counter = require('../Counter');
-var c = new Counter();
 
 describe('my counter object', function(){
+  var c;
+
+  beforeEach(function(){
+    c = new Counter();
+  });
+
   it('Obj should start at 0', function(done){
     expect(c.getValue()).to.eql(0);
     done();

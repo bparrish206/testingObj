@@ -4,7 +4,7 @@ module.exports = function(grunt){
 
   grunt.initConfig({
     jshint: {
-      src: ['index.js'],
+      src: ['Counter.js', 'tests/testingObjtest.js'],
       options: {
         node: true
       }
